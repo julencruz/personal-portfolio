@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="pageTitle">Julen Cruz Gómez - Futuro Ingeniero de Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="navbar-container">
+      <a href="#welcome-section" class="logo">julencruzg</a>
+
+      <button class="menu-toggle" aria-label="Abrir menú de navegación">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#welcome-section" data-i18n="navHome">Inicio</a></li>
+        <li><a href="#projects" data-i18n="navProjects">Proyectos</a></li>
+        <li><a href="#skills" data-i18n="navSkills">Habilidades</a></li>
+        <li><a href="#trajectory" data-i18n="navTrajectory">Trayectoria</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contacto</a></li>
+        <li class="nav-controls-mobile">
+          <div class="nav-controls">
+            <div class="language-switcher" id="language-switcher">
+              <button id="lang-es" class="lang-button active" aria-label="Cambiar a español">
+                <img src="https://flagcdn.com/es.svg" alt="Bandera de España">
+              </button>
+              <button id="lang-en" class="lang-button" aria-label="Switch to English">
+                <img src="https://flagcdn.com/gb.svg" alt="Flag of United Kingdom">
+              </button>
+              <div class="lang-selection-indicator" id="lang-indicator"></div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle dark mode">
+              <i class="fas fa-sun"></i> 
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="welcome-section" class="full-section">
+    <div class="hero-content">
+      <div class="hero-avatar-wrapper">
+        <img src="assets/avatar.jpg" alt="Julen Cruz Gómez" class="hero-avatar-image">
+      </div>
+      <h1 data-i18n="heroGreeting">Hola, soy <span>Julen Cruz Gómez</span></h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">Futuro Ingeniero de Software</p>
+      <p class="hero-description" data-i18n="heroDescription">
+        Desarrollador con ganas de crear experiencias digitales excepcionales
+        con tecnologías modernas y buenas prácticas de desarrollo.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="cta-button primary">
+          <i class="fas fa-rocket"></i>
+          <span data-i18n="heroPortfolio">Ver Portfolio</span>
+        </a>
+        <a href="#contact" class="cta-button secondary">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="heroContact">Contactar</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title" data-i18n="projectsTitle">Mis Proyectos</h2>
+    <p class="section-subtitle" data-i18n="projectsSubtitle">
+      Una selección de mis trabajos más recientes que demuestran mis habilidades
+      y experiencia en desarrollo de software.
+    </p>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-card-image">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project1Title">App de Gestión Empresarial</h3>
+          <p class="project-card-description" data-i18n="project1Description">
+            Aplicación web completa para gestión de recursos empresariales con
+            dashboard interactivo y análisis en tiempo real.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">TypeScript</span>
+          </div>
+          <div class="project-card-links">
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="viewDemo">Ver Demo</span>
+            </a>
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project2Title">Dashboard de Analytics</h3>
+          <p class="project-card-description" data-i18n="project2Description">
+            Panel de control avanzado para visualización de datos con gráficos
+            interactivos y reportes personalizables.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Vue.js</span>
+            <span class="project-tag">D3.js</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">PostgreSQL</span>
+          </div>
+          <div class="project-card-links">
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="viewDemo">Ver Demo</span>
+            </a>
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project3Title">E-commerce Platform</h3>
+          <p class="project-card-description" data-i18n="project3Description">
+            Plataforma de comercio electrónico completa con sistema de pagos,
+            gestión de inventario y panel administrativo.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Stripe</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Tailwind</span>
+          </div>
+          <div class="project-card-links">
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="viewDemo">Ver Demo</span>
+            </a>
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <i class="fas fa-dumbbell"></i>
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project4Title">App de Fitness</h3>
+          <p class="project-card-description" data-i18n="project4Description">
+            Aplicación móvil para seguimiento de rutinas deportivas con
+            sincronización en la nube y análisis de progreso.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">ML Kit</span>
+          </div>
+          <div class="project-card-links">
+            <a href="#" class="project-link">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="viewDemo">Ver Demo</span>
+            </a>
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a id="profile-link" href="https://github.com/julencruz" target="_blank" class="cta-button primary">
+        <i class="fab fa-github"></i>
+        <span data-i18n="allProjects">Ver todos mis proyectos en GitHub</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-dark">
+    <h2 class="section-title" data-i18n="skillsTitle">Mis Habilidades</h2>
+    <p class="section-subtitle" data-i18n="skillsSubtitle">
+      Tecnologías y herramientas que se utilizar y aplico en mis proyectos.
+    </p>
+
+    <div class="skills-grid">
+      <div class="skill-category-card">
+        <h3 class="skill-category-title" data-i18n="skillsLanguages">Lenguajes de Programación</h3>
+        <div class="skill-list">
+          <span class="skill-item"><i class="fab fa-js-square"></i> JavaScript</span>
+          <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+          <span class="skill-item"><i class="fas fa-code"></i> C++</span>
+          <span class="skill-item"><i class="fas fa-code"></i> C</span>
+          <span class="skill-item"><i class="fas fa-database"></i> NoSQL</span>
+          <span class="skill-item"><i class="fa-brands fa-java"></i> Java</span>
+          <span class="skill-item"><i class="fas fa-code"></i> PHP</span>
+          <span class="skill-item"><i class="fas fa-code"></i> Dart</span>
+          <span class="skill-item"><i class="fas fa-database"></i> SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card">
+        <h3 class="skill-category-title" data-i18n="skillsFrontend">Frontend</h3>
+        <div class="skill-list">
+          <span class="skill-item"><i class="fab fa-react"></i> React</span>
+          <span class="skill-item"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+          <span class="skill-item"><i class="fas fa-mobile-alt"></i> Flutter</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card">
+        <h3 class="skill-category-title" data-i18n="skillsBackend">Backend & Bases de Datos</h3>
+        <div class="skill-list">
+          <span class="skill-item"><i class="fas fa-leaf"></i> MongoDB</span>
+          <span class="skill-item"><i class="fas fa-database"></i> PostgreSQL</span>
+          <span class="skill-item"><i class="fas fa-fire"></i> Firebase</span>
+        </div>
+      </div>
+      <div class="skill-category-card">
+        <h3 class="skill-category-title" data-i18n="skillsTesting">QA Testing</h3>
+        <div class="skill-list">
+          <span class="skill-item"><i class="fas fa-robot"></i> Selenium</span>
+          <span class="skill-item"><i class="fas fa-vial"></i> JUnit</span>
+          <span class="skill-item"><i class="fa-brands fa-square-github"></i> GitHub Actions</span>
+          <span class="skill-item"><i class="fas fa-mask"></i> Mockito</span>
+        </div>
+      </div>
+
+      <div class="skill-category-card">
+        <h3 class="skill-category-title" data-i18n="skillsTools">Herramientas</h3>
+        <div class="skill-list">
+          <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="skill-item"><i class="fab fa-github"></i> GitHub</span>
+          <span class="skill-item"><i class="fab fa-docker"></i> Docker</span>
+          <span class="skill-item"><i class="fa-brands fa-jira"></i> Jira</span>
+          <span class="skill-item"><i class="fas fa-cogs"></i> Scrum</span>
+          <span class="skill-item"><i class="fas fa-paint-brush"></i> Figma</span>
+          <span class="skill-item"><i class="fas fa-paint-brush"></i> UML</span>
+          <span class="skill-item"><i class="fa-solid fa-chart-simple"></i> R & R Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trajectory" class="section">
+  <h2 class="section-title" data-i18n="trajectoryTitle">Mi Trayectoria</h2>
+  <p class="section-subtitle" data-i18n="trajectorySubtitle">
+    Mi camino en la informática y formación académica.
+  </p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <div class="timeline-date" data-i18n="trajectory1Date">2022 - Presente</div>
+        <h3 class="timeline-title" data-i18n="trajectory1Title">Grado en Ingeniería Informática</h3>
+        <div class="timeline-company" data-i18n="trajectory1University">Universitat Autònoma de Barcelona (UAB)</div>
+        <p class="timeline-description" data-i18n="trajectory1Description">
+          Cursando el Grado en Ingeniería Informática en la UAB desde 2022. Actualmente en cuarto curso, enfocado en desarrollo de software, algoritmos y sistemas inteligentes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="section section-dark">
+    <h2 class="section-title" data-i18n="contactTitle">¿Trabajamos Juntos?</h2>
+    <p class="section-subtitle" data-i18n="contactSubtitle">
+      Estoy siempre abierto a nuevos proyectos y oportunidades interesantes.
+      ¡No dudes en contactarme!
+    </p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <a href="mailto:julencruzg@gmail.com" target="_blank">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-content">
+                <h3 data-i18n="contactEmail">Email</h3>
+                <a href="mailto:julencruzg@gmail.com">julencruzg@gmail.com</a>
+              </div>
+            </div>
+        </a>
+
+        <a href="https://linkedin.com/in/julencruzg" target="_blank">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-content">
+                <h3 data-i18n="contactLinkedIn">LinkedIn</h3>
+                <a href="https://linkedin.com/in/julencruzg" target="_blank">linkedin.com/in/julencruzg/</a>
+              </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/julencruz" target="_blank">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-content">
+                <h3 data-i18n="contactGitHub">GitHub</h3>
+                <a href="https://github.com/julencruz" target="_blank">github.com/julencruz</a>
+              </div>
+            </div>
+        </a>
+
+        <a href="https://wa.me/34611421087" target="_blank" class="whatsapp-link">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-content">
+                <h3 data-i18n="contactWhatsApp">WhatsApp</h3>
+                <a href="https://wa.me/34611421087" target="_blank">+34 611 42 10 87</a>
+              </div>
+            </div>
+        </a>
+      </div>
+      
+
+      <div class="contact-cta">
+        <a href="mailto:julencruzg@gmail.com" class="cta-button primary large">
+          <i class="fas fa-paper-plane"></i>
+          <span data-i18n="sendMessage">Enviar Mensaje</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p data-i18n="footerCopyright">&copy; 2025 Julen Cruz Gómez. Desarrollado con ❤️.</p>
+      <div class="footer-links">
+        <a href="#welcome-section" data-i18n="navHome">Inicio</a>
+        <a href="#projects" data-i18n="navProjects">Proyectos</a>
+        <a href="#skills" data-i18n="navSkills">Habilidades</a>
+        <a href="#trajectory" data-i18n="navTrajectory">Trayectoria</a>
+        <a href="#contact" data-i18n="navContact">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
