@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Internationalization (i18n) ---
     const translations = {
         es: {
-            pageTitle: "Julen Cruz Gómez - Futuro Ingeniero de Software",
+            pageTitle: "Julen Cruz Gómez - Ingeniero de Software",
             navHome: "Inicio",
             navProjects: "Proyectos",
             navSkills: "Habilidades",
             navTrajectory: "Trayectoria",
             navContact: "Contacto",
             heroGreeting: "Hola, soy <span>Julen Cruz Gómez</span>",
-            heroSubtitle: "Futuro Ingeniero de Software",
+            heroSubtitle: "Ingeniero de Software",
             heroDescription: "Me gusta crear apps y webs prácticas y creativas. Disfruto haciendo software interactivo y fácil de usar que ayude a resolver problemas. Me interesa tanto el frontend y el backend como la IA y la integración con hardware.",
             heroPortfolio: "Ver Portfolio",
             heroContact: "Contactar",
@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
             footerCopyright: "© 2025 Julen Cruz Gómez. Desarrollado con ❤️."
         },
         en: {
-            pageTitle: "Julen Cruz Gómez - Future Software Engineer",
+            pageTitle: "Julen Cruz Gómez - Software Engineer",
             navHome: "Home",
             navProjects: "Projects",
             navSkills: "Skills",
             navTrajectory: "Trajectory",
             navContact: "Contact",
             heroGreeting: "Hi, I'm <span>Julen Cruz Gómez</span>",
-            heroSubtitle: "Future Software Engineer",
+            heroSubtitle: "Software Engineer",
             heroDescription: "I enjoy creating practical and creative apps, websites. I like making interactive, easy-to-use software that helps solve problems. I’m interested in both frontend and backend, as well as AI and hardware integration.",
             heroPortfolio: "View Portfolio",
             heroContact: "Contact Me",
