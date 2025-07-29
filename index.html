@@ -45,6 +45,7 @@
 
   <section id="welcome-section" class="full-section">
     <div class="hero-content">
+      <canvas id="hero-nodes-bg"></canvas>
       <div class="hero-avatar-wrapper">
         <img src="assets/avatar.jpg" alt="Julen Cruz Gómez" class="hero-avatar-image">
       </div>
@@ -77,119 +78,152 @@
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-card-image">
-          <i class="fas fa-mobile-alt"></i>
+          <img src="assets/projects/muscleapp.png" alt="MuscleApp" class="project-image">
         </div>
         <div class="project-card-content">
-          <h3 class="project-card-title" data-i18n="project1Title">App de Gestión Empresarial</h3>
+          <h3 class="project-card-title" data-i18n="project1Title">MuscleApp</h3>
           <p class="project-card-description" data-i18n="project1Description">
-            Aplicación web completa para gestión de recursos empresariales con
-            dashboard interactivo y análisis en tiempo real.
-          </p>
-          <div class="project-card-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">MongoDB</span>
-            <span class="project-tag">TypeScript</span>
-          </div>
-          <div class="project-card-links">
-            <a href="#" class="project-link">
-              <i class="fas fa-external-link-alt"></i>
-              <span data-i18n="viewDemo">Ver Demo</span>
-            </a>
-            <a href="#" class="project-link">
-              <i class="fab fa-github"></i>
-              <span data-i18n="viewCode">Código</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-card-image">
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <div class="project-card-content">
-          <h3 class="project-card-title" data-i18n="project2Title">Dashboard de Analytics</h3>
-          <p class="project-card-description" data-i18n="project2Description">
-            Panel de control avanzado para visualización de datos con gráficos
-            interactivos y reportes personalizables.
-          </p>
-          <div class="project-card-tags">
-            <span class="project-tag">Vue.js</span>
-            <span class="project-tag">D3.js</span>
-            <span class="project-tag">Python</span>
-            <span class="project-tag">PostgreSQL</span>
-          </div>
-          <div class="project-card-links">
-            <a href="#" class="project-link">
-              <i class="fas fa-external-link-alt"></i>
-              <span data-i18n="viewDemo">Ver Demo</span>
-            </a>
-            <a href="#" class="project-link">
-              <i class="fab fa-github"></i>
-              <span data-i18n="viewCode">Código</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-card-image">
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <div class="project-card-content">
-          <h3 class="project-card-title" data-i18n="project3Title">E-commerce Platform</h3>
-          <p class="project-card-description" data-i18n="project3Description">
-            Plataforma de comercio electrónico completa con sistema de pagos,
-            gestión de inventario y panel administrativo.
-          </p>
-          <div class="project-card-tags">
-            <span class="project-tag">Next.js</span>
-            <span class="project-tag">Stripe</span>
-            <span class="project-tag">Firebase</span>
-            <span class="project-tag">Tailwind</span>
-          </div>
-          <div class="project-card-links">
-            <a href="#" class="project-link">
-              <i class="fas fa-external-link-alt"></i>
-              <span data-i18n="viewDemo">Ver Demo</span>
-            </a>
-            <a href="#" class="project-link">
-              <i class="fab fa-github"></i>
-              <span data-i18n="viewCode">Código</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-card-image">
-          <i class="fas fa-dumbbell"></i>
-        </div>
-        <div class="project-card-content">
-          <h3 class="project-card-title" data-i18n="project4Title">App de Fitness</h3>
-          <p class="project-card-description" data-i18n="project4Description">
-            Aplicación móvil para seguimiento de rutinas deportivas con
-            sincronización en la nube y análisis de progreso.
+            Aplicación móvil para seguimiento de rutinas creadas por usuarios deportivas con sincronización en la nube y análisis de progreso.
           </p>
           <div class="project-card-tags">
             <span class="project-tag">Flutter</span>
             <span class="project-tag">Dart</span>
             <span class="project-tag">Firebase</span>
-            <span class="project-tag">ML Kit</span>
           </div>
           <div class="project-card-links">
-            <a href="#" class="project-link">
-              <i class="fas fa-external-link-alt"></i>
-              <span data-i18n="viewDemo">Ver Demo</span>
-            </a>
-            <a href="#" class="project-link">
+            <a class="project-link-btn" href="https://github.com/julencruz/MuscleApp" target="_blank" rel="noopener">
               <i class="fab fa-github"></i>
               <span data-i18n="viewCode">Código</span>
             </a>
           </div>
         </div>
       </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="assets/projects/docker-network.png" alt="Infraestructura Docker" class="project-image">
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project6Title">Infraestructura de Red con Docker</h3>
+          <p class="project-card-description" data-i18n="project6Description">
+            Diseño y despliegue de una red simulada con Docker Compose: balanceador Nginx, múltiples servidores Apache/PHP, base de datos PostgreSQL y PGAdmin, todo conectado por redes virtuales y volúmenes, simulando un entorno escalable y profesional.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">Nginx</span>
+            <span class="project-tag">Apache</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">PGAdmin</span>
+            <span class="project-tag">DevOps</span>
+          </div>
+          <div class="project-card-links">
+            <a class="project-link-btn" href="https://github.com/julencruz/Docker_Network" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="assets/projects/queens.png" alt="Dashboard de Analytics" class="project-image">
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project2Title">Queens - Testing</h3>
+          <p class="project-card-description" data-i18n="project2Description">
+            Se desarrolló un juego tipo Queens (o Star Battle) aplicando TDD, con pruebas unitarias de caja blanca y negra. El proyecto sigue el patrón MVC y utiliza mocks para aislar componentes durante el testeo.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">JUnit</span>
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Mockito</span>
+            <span class="project-tag">Github Actions</span>
+          </div>
+          <div class="project-card-links">
+            <a class="project-link-btn" href="https://github.com/julencruz/Queens_Testing" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="assets/projects/todorelojes.png" alt="E-commerce Platform" class="project-image">
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project3Title">TodoRelojes</h3>
+          <p class="project-card-description" data-i18n="project3Description">
+            Proyecto de ecommerce sencillo para practicar PHP, JavaScript, HTML, CSS y jQuery, implementando el patrón MVC y usando cookies y AJAX para gestionar el carrito y mejorar la interacción.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">PostgreSQL</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">JQuery & AJAX</span>
+          </div>
+          <div class="project-card-links">
+            <a class="project-link-btn" href="https://github.com/julencruz/TodoRelojes" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="assets/projects/ikea.png" alt="Ikea web - Testing" class="project-image">
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project4Title">Ikea web - Testing</h3>
+          <p class="project-card-description" data-i18n="project4Description">
+            Proyecto de testing de la web de IKEA utilizando Selenium, Cucumber con Gherkin y Java para automatizar pruebas de interfaz.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Selenium</span>
+            <span class="project-tag">Ghenkins</span>
+            <span class="project-tag">Cucumber</span>
+          </div>
+          <div class="project-card-links">
+            <a class="project-link-btn" href="https://github.com/julencruz/Ikea_Web_Testing" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="assets/projects/etiquetador.png" alt="Etiquetador IA - KNN" class="project-image">
+        </div>
+        <div class="project-card-content">
+          <h3 class="project-card-title" data-i18n="project5Title">Etiquetador IA - KNN</h3>
+          <p class="project-card-description" data-i18n="project5Description">
+            Sistema de etiquetado automático de prendas usando inteligencia artificial. Se empleó KNN para identificar el tipo de ropa y Kmeans para el color. Se entrenó el modelo para clasificar el tipo de ropa a partir de imágenes.
+          </p>
+          <div class="project-card-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">KNN</span>
+            <span class="project-tag">Machine Learning</span>
+            <span class="project-tag">IA</span>
+          </div>
+          <div class="project-card-links">
+            <a class="project-link-btn" href="https://github.com/julencruz/Etiquetador" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              <span data-i18n="viewCode">Código</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="section-cta">
