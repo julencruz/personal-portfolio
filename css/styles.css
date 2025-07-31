@@ -525,6 +525,28 @@ body.dark-theme #welcome-section {
     font-size: 1.15rem;
 }
 
+/* Botón terciario para descargar CV */
+.cta-button.tertiary {
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  border: 2px solid var(--button-secondary-border);
+  box-shadow: none;
+  font-weight: 500;
+}
+
+.cta-button.tertiary:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px var(--shadow-dark);
+}
+
+.cta-button.tertiary i {
+  color: inherit;
+  margin-right: 6px;
+}
+
 /* --- Projects Section --- */
 .projects-grid {
     display: grid;

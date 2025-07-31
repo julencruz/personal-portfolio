@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heroDescription: "Me gusta crear apps y webs prácticas y creativas. Disfruto haciendo software de calidad, interactivo y fácil de usar que ayude a resolver problemas. Me interesa tanto el frontend y el backend como la IA y la integración con hardware.",
             heroPortfolio: "Ver Portfolio",
             heroContact: "Contactar",
+            heroDownloadCV: "Descargar CV",
             projectsTitle: "Mis Proyectos",
             projectsSubtitle: "Estos son algunos de los proyectos en los que he trabajado. ",
             project1Title: "MuscleApp",
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heroDescription: "I enjoy creating practical and creative apps and websites. I like making high-quality, interactive, and easy-to-use software that helps solve real problems. I'm interested in both frontend and backend development, as well as AI and hardware integration.",
             heroPortfolio: "View Portfolio",
             heroContact: "Contact Me",
+            heroDownloadCV: "Download CV",
             projectsTitle: "My Projects",
             projectsSubtitle: "Here are some of the projects I've worked on.",
             project1Title: "MuscleApp",
@@ -108,9 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const langIndicator = document.getElementById('lang-indicator');
     const langEsButton = document.getElementById('lang-es');
     const langEnButton = document.getElementById('lang-en');
+    const cvDownloadButton = document.getElementById('cvDownloadButton');
 
     const setLanguage = (lang) => {
         document.documentElement.lang = lang;
+        cvDownloadButton.href = `/assets/cv/CV - Julen Cruz Gomez [${lang}].pdf`;
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
